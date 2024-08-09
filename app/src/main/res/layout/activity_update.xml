@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    tools:context=".UpdateActivity">
+
+    <EditText
+        android:id="@+id/EditTextName"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:hint="@string/nama_lengkap"
+        android:autofillHints="@string/nama_lengkap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/EditTextAge"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:hint="@string/usia"
+        android:autofillHints="@string/usia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTextName"/>
+
+    <EditText
+        android:id="@+id/EditTextPosition"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:hint="@string/jabatan"
+        android:autofillHints="@string/jabatan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTextAge"/>
+
+    <EditText
+        android:id="@+id/EditTextSkills"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:hint="@string/keahlian"
+        android:autofillHints="@string/keahlian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTextPosition"/>
+
+    <EditText
+        android:id="@+id/EditTextGender"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:hint="@string/jenis_kelamin"
+        android:autofillHints="@string/jenis_kelamin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTextSkills"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTextGender"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

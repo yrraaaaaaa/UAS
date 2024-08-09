@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UAS IS4 10522126</string>
+    <string name="full_name">full_name</string>
+    <string name="age">age</string>
+    <string name="address">address</string>
+    <string name="position">position</string>
+    <string name="skills">skills</string>
+    <string name="delete">delete</string>
+    <string name="gender">gender</string>
+    <string name="create_data">create_data</string>
+    <string name="nama_lengkap">nama_lengkap</string>
+    <string name="usia">usia</string>
+    <string name="jabatan">jabatan</string>
+    <string name="keahlian">keahlian</string>
+    <string name="jenis_kelamin">jenis_kelamin</string>
+    <string name="save">save</string>
+</resources>
